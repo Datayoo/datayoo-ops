@@ -40,17 +40,34 @@ Write-Host ""
 function Read-GavFromJar([string]$jarPath) {
   $zip = [System.IO.Compression.ZipFile]::OpenRead($jarPath)
   try {
-    $entry = $zip.Entries |
+    $propEntry = $zip.Entries |
       Where-Object { $_.FullName -match '^META-INF/maven/.+/pom\.properties$' } |
       Select-Object -First 1
-    if (-not $entry) {
+    if (-not $propEntry) {
       return $null
     }
-    $reader = New-Object System.IO.StreamReader($entry.Open())
+    $reader = New-Object System.IO.StreamReader($propEntry.Open())
     try {
       $text = $reader.ReadToEnd()
     } finally {
       $reader.Close()
+    }
+
+    # maven plugins must be installed as packaging=maven-plugin, not jar
+    $packaging = "jar"
+    $pomEntry = $zip.Entries |
+      Where-Object { $_.FullName -match '^META-INF/maven/.+/pom\.xml$' } |
+      Select-Object -First 1
+    if ($pomEntry) {
+      $pomReader = New-Object System.IO.StreamReader($pomEntry.Open())
+      try {
+        $pomText = $pomReader.ReadToEnd()
+      } finally {
+        $pomReader.Close()
+      }
+      if ($pomText -match '<packaging>\s*([^<]+)\s*</packaging>') {
+        $packaging = $Matches[1].Trim()
+      }
     }
   } finally {
     $zip.Dispose()
@@ -60,6 +77,7 @@ function Read-GavFromJar([string]$jarPath) {
     groupId = $null
     artifactId = $null
     version = $null
+    packaging = $packaging
   }
   foreach ($line in ($text -split "`r?`n")) {
     if ($line -match '^\s*#' -or $line.Trim() -eq "") { continue }
@@ -97,13 +115,13 @@ Get-ChildItem -Path $libDir -Filter *.jar | ForEach-Object {
     return
   }
 
-  Write-Host "[INSTALL] $($gav.groupId):$($gav.artifactId):$($gav.version)  <- $($_.Name)"
+  Write-Host "[INSTALL] $($gav.groupId):$($gav.artifactId):$($gav.version) ($($gav.packaging))  <- $($_.Name)"
   & mvn -q install:install-file `
     "-Dfile=$src" `
     "-DgroupId=$($gav.groupId)" `
     "-DartifactId=$($gav.artifactId)" `
     "-Dversion=$($gav.version)" `
-    "-Dpackaging=jar"
+    "-Dpackaging=$($gav.packaging)"
   if ($LASTEXITCODE -ne 0) {
     Write-Host "[FAIL] $($gav.groupId):$($gav.artifactId):$($gav.version)"
     $script:failed++

@@ -47,6 +47,13 @@ with zipfile.ZipFile(jar) as z:
     if not props:
         sys.exit(2)
     text = z.read(props[0]).decode("utf-8", "replace")
+    poms = [n for n in z.namelist() if n.startswith("META-INF/maven/") and n.endswith("pom.xml")]
+    packaging = "jar"
+    if poms:
+        pom = z.read(poms[0]).decode("utf-8", "replace")
+        m = re.search(r"<packaging>\s*([^<]+)\s*</packaging>", pom)
+        if m:
+            packaging = m.group(1).strip()
 gav = {}
 for line in text.splitlines():
     line = line.strip()
@@ -60,6 +67,7 @@ if not all(k in gav for k in ("groupId", "artifactId", "version")):
 print(gav["groupId"])
 print(gav["artifactId"])
 print(gav["version"])
+print(packaging)
 PY
 }
 
@@ -79,6 +87,7 @@ for jar in lib/*.jar; do
   GID="${GAV[0]}"
   AID="${GAV[1]}"
   VER="${GAV[2]}"
+  PACKAGING="${GAV[3]:-jar}"
 
   GID_PATH="${GID//.//}"
   DEST="$LOCAL_REPO/$GID_PATH/$AID/$VER/$AID-$VER.jar"
@@ -89,13 +98,13 @@ for jar in lib/*.jar; do
     continue
   fi
 
-  echo "[INSTALL] $GID:$AID:$VER  <- $(basename "$jar")"
+  echo "[INSTALL] $GID:$AID:$VER ($PACKAGING)  <- $(basename "$jar")"
   if ! mvn -q install:install-file \
       -Dfile="$jar" \
       -DgroupId="$GID" \
       -DartifactId="$AID" \
       -Dversion="$VER" \
-      -Dpackaging=jar; then
+      -Dpackaging="$PACKAGING"; then
     echo "[FAIL] $GID:$AID:$VER"
     FAILED=$((FAILED + 1))
     continue
