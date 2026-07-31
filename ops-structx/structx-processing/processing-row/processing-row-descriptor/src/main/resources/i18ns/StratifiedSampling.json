@@ -1,0 +1,50 @@
+[
+  {
+    "id": "StratifiedSampling",
+    "text": "StratifiedSampling",
+    "i18ns": {
+      "en_US": "StratifiedSampling",
+      "zh_CN": "分层采样"
+    }
+  },
+  {
+    "id": "StratifiedSampling.general.stratifiedColumn",
+    "text": "stratifiedColumn",
+    "i18ns": {
+      "en_US": "stratifiedColumn",
+      "zh_CN": "分层列"
+    }
+  },
+  {
+    "id": "StratifiedSampling.general.sample",
+    "text": "sample",
+    "i18ns": {
+      "en_US": "sample",
+      "zh_CN": "抽样策略"
+    }
+  },
+  {
+    "id": "StratifiedSampling.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "StratifiedSampling.general.sampleSize",
+    "text": "sampleSize",
+    "i18ns": {
+      "en_US": "sampleSize",
+      "zh_CN": "抽样数量"
+    }
+  },
+  {
+    "id": "StratifiedSampling.general.sampleRatio",
+    "text": "sampleRatio",
+    "i18ns": {
+      "en_US": "sampleRatio",
+      "zh_CN": "抽样比例"
+    }
+  }
+]

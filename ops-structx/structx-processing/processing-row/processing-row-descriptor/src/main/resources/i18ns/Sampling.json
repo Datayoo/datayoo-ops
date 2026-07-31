@@ -1,0 +1,50 @@
+[
+  {
+    "id": "Sampling.general.sampleProbability",
+    "text": "sampleProbability",
+    "i18ns": {
+      "en_US": "sampleProbability",
+      "zh_CN": "抽样概率"
+    }
+  },
+  {
+    "id": "Sampling.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "Sampling.general.sample",
+    "text": "sample",
+    "i18ns": {
+      "en_US": "sample",
+      "zh_CN": "抽样策略"
+    }
+  },
+  {
+    "id": "Sampling",
+    "text": "Sampling",
+    "i18ns": {
+      "en_US": "Sampling",
+      "zh_CN": "采样"
+    }
+  },
+  {
+    "id": "Sampling.general.sampleRatio",
+    "text": "sampleRatio",
+    "i18ns": {
+      "en_US": "sampleRatio",
+      "zh_CN": "抽样比例"
+    }
+  },
+  {
+    "id": "Sampling.general.sampleSize",
+    "text": "sampleSize",
+    "i18ns": {
+      "en_US": "sampleSize",
+      "zh_CN": "抽样数量"
+    }
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "MatchFilter.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "MatchFilter",
+    "text": "MatchFilter",
+    "i18ns": {
+      "en_US": "MatchFilter",
+      "zh_CN": "匹配过滤"
+    }
+  }
+]

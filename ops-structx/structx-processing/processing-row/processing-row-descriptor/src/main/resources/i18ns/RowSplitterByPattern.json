@@ -1,0 +1,26 @@
+[
+  {
+    "id": "RowSplitterByPattern",
+    "text": "RowSplitterByPattern",
+    "i18ns": {
+      "en_US": "RowSplitterByPattern",
+      "zh_CN": "按模式拆分行"
+    }
+  },
+  {
+    "id": "RowSplitterByPattern.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "RowSplitterByPattern.general.pattern",
+    "text": "pattern",
+    "i18ns": {
+      "en_US": "pattern",
+      "zh_CN": "行拆分表达式"
+    }
+  }
+]

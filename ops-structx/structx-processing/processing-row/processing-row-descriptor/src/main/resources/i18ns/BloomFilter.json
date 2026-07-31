@@ -1,0 +1,50 @@
+[
+  {
+    "id": "BloomFilter",
+    "text": "BloomFilter",
+    "i18ns": {
+      "en_US": "BloomFilter",
+      "zh_CN": "布隆过滤器"
+    }
+  },
+  {
+    "id": "BloomFilter.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "BloomFilter.general.charset",
+    "text": "charset",
+    "i18ns": {
+      "en_US": "charset",
+      "zh_CN": "字符集"
+    }
+  },
+  {
+    "id": "BloomFilter.general.srcColumn",
+    "text": "srcColumn",
+    "i18ns": {
+      "en_US": "srcColumn",
+      "zh_CN": "数据集"
+    }
+  },
+  {
+    "id": "BloomFilter.general.fpp",
+    "text": "fpp",
+    "i18ns": {
+      "en_US": "fpp",
+      "zh_CN": "误差率"
+    }
+  },
+  {
+    "id": "BloomFilter.general.column",
+    "text": "column",
+    "i18ns": {
+      "en_US": "column",
+      "zh_CN": "待匹配数据"
+    }
+  }
+]

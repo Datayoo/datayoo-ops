@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ValuesCut",
+    "text": "ValuesCut",
+    "i18ns": {
+      "en_US": "ValuesCut",
+      "zh_CN": "值剪切"
+    }
+  },
+  {
+    "id": "ValuesCut.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  }
+]

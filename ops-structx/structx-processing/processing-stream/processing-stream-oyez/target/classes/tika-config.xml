@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+    <detector class="org.apache.tika.detect.DefaultDetector">
+        <detector-exclude
+                class="org.apache.tika.parser.pkg.ZipContainerDetector"/>
+        <detector-exclude
+                class="org.apache.tika.parser.microsoft.POIFSContainerDetector"/>
+    </detector>
+    <parsers>
+        <!-- Default Parser for most things, except for 2 mime types, and never use the Executable Parser -->
+        <parser class="org.apache.tika.parser.DefaultParser">
+            <mime-exclude>image/jpeg</mime-exclude>
+            <mime-exclude>application/pdf</mime-exclude>
+            <parser-exclude
+                    class="org.apache.tika.parser.executable.ExecutableParser"/>
+        </parser>
+        <!-- Use a different parser for PDF -->
+        <parser class="org.apache.tika.parser.pdf.PDFParser">
+            <mime>application/pdf</mime>
+        </parser>
+    </parsers>
+</properties>

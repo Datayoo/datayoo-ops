@@ -1,0 +1,73 @@
+[
+  {
+    "id": "SparkSQL.general.columnSet.colMappings.mappingEntry",
+    "text": "mappingEntry",
+    "i18ns": {
+      "en_US": "mappingEntry"
+    }
+  },
+  {
+    "id": "SparkSQL.general.columnSet.colMappings.mappingEntry.colExpr",
+    "text": "colExpr",
+    "i18ns": {
+      "en_US": "colExpr",
+      "zh_CN": "输出数据表达式"
+    }
+  },
+  {
+    "id": "SparkSQL.general.sql",
+    "text": "sql",
+    "i18ns": {
+      "en_US": "sql",
+      "zh_CN": "SQL"
+    }
+  },
+  {
+    "id": "SparkSQL.general.columnSet.colMappings.mappingEntry.colName",
+    "text": "colName",
+    "i18ns": {
+      "en_US": "colName",
+      "zh_CN": "输出列名称"
+    }
+  },
+  {
+    "id": "SparkSQL.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "SparkSQL.general.columnSet",
+    "text": "columnSet",
+    "i18ns": {
+      "en_US": "columnSet",
+      "zh_CN": "列集"
+    }
+  },
+  {
+    "id": "SparkSQL.general.columnSet.colMappings.mappingEntry.colType",
+    "text": "colType",
+    "i18ns": {
+      "en_US": "colType",
+      "zh_CN": "输出列类型"
+    }
+  },
+  {
+    "id": "SparkSQL",
+    "text": "SparkSQL",
+    "i18ns": {
+      "en_US": "SparkSQL",
+      "zh_CN": "SparkSQL"
+    }
+  },
+  {
+    "id": "SparkSQL.general.columnSet.colMappings",
+    "text": "colMappings",
+    "i18ns": {
+      "en_US": "colMappings",
+      "zh_CN": "列集合"
+    }
+  }
+]

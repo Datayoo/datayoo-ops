@@ -1,0 +1,90 @@
+[
+  {
+    "id": "XmlFlatter.general.structureMappings.filterMode",
+    "text": "filterMode",
+    "i18ns": {
+      "en_US": "filterMode",
+      "zh_CN": "过滤模式"
+    }
+  },
+  {
+    "id": "XmlFlatter",
+    "text": "XmlFlatter",
+    "i18ns": {
+      "en_US": "XmlFlatter",
+      "zh_CN": "Xml扁平化"
+    }
+  },
+  {
+    "id": "XmlFlatter.general.structureMappings.dataExample",
+    "text": "dataExample",
+    "i18ns": {
+      "en_US": "dataExample",
+      "zh_CN": "数据样例"
+    }
+  },
+  {
+    "id": "XmlFlatter.general.structureMappings.dataPath",
+    "text": "dataPath",
+    "i18ns": {
+      "en_US": "dataPath",
+      "zh_CN": "结构字段路径"
+    }
+  },
+  {
+    "id": "XmlFlatter.general.structureMappings",
+    "text": "structureMappings",
+    "i18ns": {
+      "en_US": "structureMappings",
+      "zh_CN": "结构映射"
+    }
+  },
+  {
+    "id": "XmlFlatter.general.dataColumn",
+    "text": "dataColumn",
+    "i18ns": {
+      "en_US": "dataColumn",
+      "zh_CN": "Xml数据列"
+    }
+  },
+  {
+    "id": "XmlFlatter.general.structureMappings.endPos",
+    "text": "endPos",
+    "i18ns": {
+      "en_US": "endPos",
+      "zh_CN": "结束位置"
+    }
+  },
+  {
+    "id": "XmlFlatter.general.structureMappings.filter",
+    "text": "filter",
+    "i18ns": {
+      "en_US": "filter",
+      "zh_CN": "过滤条件"
+    }
+  },
+  {
+    "id": "XmlFlatter.general.structureMappings.mappingName",
+    "text": "mappingName",
+    "i18ns": {
+      "en_US": "mappingName",
+      "zh_CN": "字段映射名"
+    }
+  },
+  {
+    "id": "XmlFlatter.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "XmlFlatter.general.structureMappings.startPos",
+    "text": "startPos",
+    "i18ns": {
+      "en_US": "startPos",
+      "zh_CN": "起始位置"
+    }
+  }
+]

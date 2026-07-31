@@ -1,0 +1,18 @@
+[
+  {
+    "id": "StreamAggregate",
+    "text": "StreamAggregate",
+    "i18ns": {
+      "en_US": "StreamAggregate",
+      "zh_CN": "流式归并"
+    }
+  },
+  {
+    "id": "StreamAggregate.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  }
+]

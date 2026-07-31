@@ -1,0 +1,26 @@
+[
+  {
+    "id": "RandCellPhone.general.columnName",
+    "text": "columnName",
+    "i18ns": {
+      "en_US": "columnName",
+      "zh_CN": "数据列"
+    }
+  },
+  {
+    "id": "RandCellPhone.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "RandCellPhone",
+    "text": "RandCellPhone",
+    "i18ns": {
+      "en_US": "RandCellPhone",
+      "zh_CN": "随机生成手机号"
+    }
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "MultiColumnsBloomFilter",
+    "text": "MultiColumnsBloomFilter",
+    "i18ns": {
+      "en_US": "MultiColumnsBloomFilter",
+      "zh_CN": "多列布隆过滤"
+    }
+  },
+  {
+    "id": "MultiColumnsBloomFilter.general.fpp",
+    "text": "fpp",
+    "i18ns": {
+      "en_US": "fpp",
+      "zh_CN": "误差率"
+    }
+  },
+  {
+    "id": "MultiColumnsBloomFilter.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "MultiColumnsBloomFilter.general.charset",
+    "text": "charset",
+    "i18ns": {
+      "en_US": "charset",
+      "zh_CN": "字符集"
+    }
+  }
+]

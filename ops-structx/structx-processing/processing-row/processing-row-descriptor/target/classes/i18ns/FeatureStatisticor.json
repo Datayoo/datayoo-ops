@@ -1,0 +1,26 @@
+[
+  {
+    "id": "FeatureStatisticor",
+    "text": "FeatureStatisticor",
+    "i18ns": {
+      "en_US": "FeatureStatisticor",
+      "zh_CN": "特征统计"
+    }
+  },
+  {
+    "id": "FeatureStatisticor.general.rowCount",
+    "text": "rowCount",
+    "i18ns": {
+      "en_US": "rowCount",
+      "zh_CN": "特征统计行限定"
+    }
+  },
+  {
+    "id": "FeatureStatisticor.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  }
+]

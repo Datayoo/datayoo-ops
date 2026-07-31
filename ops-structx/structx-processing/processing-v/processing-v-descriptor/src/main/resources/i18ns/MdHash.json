@@ -1,0 +1,34 @@
+[
+  {
+    "id": "MdHash.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "MdHash",
+    "text": "MdHash",
+    "i18ns": {
+      "en_US": "MdHash",
+      "zh_CN": "消息散列哈希"
+    }
+  },
+  {
+    "id": "MdHash.general.workingMode",
+    "text": "workingMode",
+    "i18ns": {
+      "en_US": "workingMode",
+      "zh_CN": "编码输出模式"
+    }
+  },
+  {
+    "id": "MdHash.general.algorithm",
+    "text": "algorithm",
+    "i18ns": {
+      "en_US": "algorithm",
+      "zh_CN": "messageDigest算法"
+    }
+  }
+]

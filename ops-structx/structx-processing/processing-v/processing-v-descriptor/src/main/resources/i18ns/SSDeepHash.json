@@ -1,0 +1,26 @@
+[
+  {
+    "id": "SSDeepHash.general.workingMode",
+    "text": "workingMode",
+    "i18ns": {
+      "en_US": "workingMode",
+      "zh_CN": "编码输出模式"
+    }
+  },
+  {
+    "id": "SSDeepHash",
+    "text": "SSDeepHash",
+    "i18ns": {
+      "en_US": "SSDeepHash",
+      "zh_CN": "SSDeep哈希"
+    }
+  },
+  {
+    "id": "SSDeepHash.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  }
+]

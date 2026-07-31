@@ -1,0 +1,34 @@
+[
+  {
+    "id": "JoinWithRightDict",
+    "text": "JoinWithRightDict",
+    "i18ns": {
+      "en_US": "JoinWithRightDict",
+      "zh_CN": "单侧字典集合联结"
+    }
+  },
+  {
+    "id": "JoinWithRightDict.general.leftColumn",
+    "text": "leftColumn",
+    "i18ns": {
+      "en_US": "leftColumn",
+      "zh_CN": "左侧列"
+    }
+  },
+  {
+    "id": "JoinWithRightDict.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "JoinWithRightDict.general.rightColumn",
+    "text": "rightColumn",
+    "i18ns": {
+      "en_US": "rightColumn",
+      "zh_CN": "右侧列"
+    }
+  }
+]

@@ -1,0 +1,10 @@
+org\datayoo\sengee\op\processing\flat\Json2KVTableDescriptor.class
+org\datayoo\sengee\op\processing\flat\ObjectFlatterDescriptor.class
+org\datayoo\sengee\op\processing\flat\Table2COODescriptor.class
+org\datayoo\sengee\op\processing\st\RenameColumnsByPatternDescriptor.class
+org\datayoo\sengee\op\processing\flat\XmlFlatterDescriptor.class
+org\datayoo\sengee\op\processing\flat\AbstractFlatterDescriptor.class
+org\datayoo\sengee\op\processing\st\RemoveColumnsDescriptor.class
+org\datayoo\sengee\op\processing\flat\JsonFlatterDescriptor.class
+org\datayoo\sengee\op\processing\st\AddColumnsDescriptor.class
+org\datayoo\sengee\op\processing\st\RenameColumnsDescriptor.class

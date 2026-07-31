@@ -1,0 +1,58 @@
+[
+  {
+    "id": "Sm4Crypto",
+    "text": "Sm4Crypto",
+    "i18ns": {
+      "en_US": "Sm4Crypto",
+      "zh_CN": "SM4加解密"
+    }
+  },
+  {
+    "id": "Sm4Crypto.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "Sm4Crypto.general.mode",
+    "text": "mode",
+    "i18ns": {
+      "en_US": "mode",
+      "zh_CN": "加解密模式"
+    }
+  },
+  {
+    "id": "Sm4Crypto.general.workingMode",
+    "text": "workingMode",
+    "i18ns": {
+      "en_US": "workingMode",
+      "zh_CN": "编码输出模式"
+    }
+  },
+  {
+    "id": "Sm4Crypto.general.columnSet",
+    "text": "columnSet",
+    "i18ns": {
+      "en_US": "columnSet",
+      "zh_CN": "待处理列集合"
+    }
+  },
+  {
+    "id": "Sm4Crypto.general.columnSet.columnName",
+    "text": "columnName",
+    "i18ns": {
+      "en_US": "columnName",
+      "zh_CN": "待处理列"
+    }
+  },
+  {
+    "id": "Sm4Crypto.general.key",
+    "text": "key",
+    "i18ns": {
+      "en_US": "key",
+      "zh_CN": "SM4密钥"
+    }
+  }
+]

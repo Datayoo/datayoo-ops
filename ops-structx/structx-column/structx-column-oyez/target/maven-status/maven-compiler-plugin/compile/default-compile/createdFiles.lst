@@ -1,0 +1,13 @@
+org\datayoo\oyez\op\processing\flat\AbstractFlatter.class
+org\datayoo\oyez\op\processing\st\RenameColumnsByPattern.class
+org\datayoo\oyez\op\processing\flat\Json2KVTable.class
+org\datayoo\oyez\op\processing\flat\XmlFlatter.class
+org\datayoo\oyez\op\processing\st\RemoveColumns.class
+org\datayoo\oyez\op\processing\flat\Table2COO.class
+org\datayoo\oyez\op\processing\flat\JsonFlatter.class
+org\datayoo\oyez\op\processing\flat\ObjectFlatter$InnerDataListener.class
+org\datayoo\oyez\op\processing\flat\AbstractFlatter$InnerDataListener.class
+org\datayoo\oyez\op\processing\flat\ObjectFlatter.class
+org\datayoo\oyez\op\processing\st\RenameColumns.class
+org\datayoo\oyez\op\processing\flat\ObjectFlatter$InnerOutputColumnSetMetadataCreator.class
+org\datayoo\oyez\op\processing\st\AddColumns.class

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "XXHash",
+    "text": "XXHash",
+    "i18ns": {
+      "en_US": "XXHash",
+      "zh_CN": "XX哈希"
+    }
+  },
+  {
+    "id": "XXHash.general.workingMode",
+    "text": "workingMode",
+    "i18ns": {
+      "en_US": "workingMode",
+      "zh_CN": "编码输出模式"
+    }
+  },
+  {
+    "id": "XXHash.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  }
+]

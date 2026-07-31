@@ -1,0 +1,26 @@
+[
+  {
+    "id": "HexEncode",
+    "text": "HexEncode",
+    "i18ns": {
+      "en_US": "HexEncode",
+      "zh_CN": "十六进制编码"
+    }
+  },
+  {
+    "id": "HexEncode.general.workingMode",
+    "text": "workingMode",
+    "i18ns": {
+      "en_US": "workingMode",
+      "zh_CN": "编码输出模式"
+    }
+  },
+  {
+    "id": "HexEncode.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  }
+]

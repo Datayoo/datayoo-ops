@@ -1,0 +1,26 @@
+[
+  {
+    "id": "Union",
+    "text": "Union",
+    "i18ns": {
+      "en_US": "Union",
+      "zh_CN": "并集"
+    }
+  },
+  {
+    "id": "Union.general.delDup",
+    "text": "delDup",
+    "i18ns": {
+      "en_US": "delDup",
+      "zh_CN": "是否去重"
+    }
+  },
+  {
+    "id": "Union.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  }
+]

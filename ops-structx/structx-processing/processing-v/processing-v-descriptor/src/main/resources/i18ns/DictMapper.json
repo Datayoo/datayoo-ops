@@ -1,0 +1,42 @@
+[
+  {
+    "id": "DictMapper.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "DictMapper",
+    "text": "DictMapper",
+    "i18ns": {
+      "en_US": "DictMapper",
+      "zh_CN": "字典映射"
+    }
+  },
+  {
+    "id": "DictMapper.general.keyColumn",
+    "text": "keyColumn",
+    "i18ns": {
+      "en_US": "keyColumn",
+      "zh_CN": "字典key列"
+    }
+  },
+  {
+    "id": "DictMapper.general.colName",
+    "text": "colName",
+    "i18ns": {
+      "en_US": "colName",
+      "zh_CN": "待映射列"
+    }
+  },
+  {
+    "id": "DictMapper.general.valueColumn",
+    "text": "valueColumn",
+    "i18ns": {
+      "en_US": "valueColumn",
+      "zh_CN": "字典value列"
+    }
+  }
+]

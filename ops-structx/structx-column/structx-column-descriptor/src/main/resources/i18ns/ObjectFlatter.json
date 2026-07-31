@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ObjectFlatter.general.structureMappings.mappingName",
+    "text": "mappingName",
+    "i18ns": {
+      "en_US": "mappingName",
+      "zh_CN": "字段映射名"
+    }
+  },
+  {
+    "id": "ObjectFlatter.general.objectColumn",
+    "text": "objectColumn",
+    "i18ns": {
+      "en_US": "objectColumn",
+      "zh_CN": "待转换列名称"
+    }
+  },
+  {
+    "id": "ObjectFlatter.general.structureMappings.dataPath",
+    "text": "dataPath",
+    "i18ns": {
+      "en_US": "dataPath",
+      "zh_CN": "结构字段路径"
+    }
+  },
+  {
+    "id": "ObjectFlatter.general.structureMappings.filter",
+    "text": "filter",
+    "i18ns": {
+      "en_US": "filter",
+      "zh_CN": "过滤条件"
+    }
+  },
+  {
+    "id": "ObjectFlatter",
+    "text": "ObjectFlatter",
+    "i18ns": {
+      "en_US": "ObjectFlatter",
+      "zh_CN": "对象结构映射"
+    }
+  },
+  {
+    "id": "ObjectFlatter.general.structureMappings.filterMode",
+    "text": "filterMode",
+    "i18ns": {
+      "en_US": "filterMode",
+      "zh_CN": "过滤模式"
+    }
+  },
+  {
+    "id": "ObjectFlatter.general.structureMappings.endPos",
+    "text": "endPos",
+    "i18ns": {
+      "en_US": "endPos",
+      "zh_CN": "结束位置"
+    }
+  },
+  {
+    "id": "ObjectFlatter.general.structureMappings.startPos",
+    "text": "startPos",
+    "i18ns": {
+      "en_US": "startPos",
+      "zh_CN": "起始位置"
+    }
+  },
+  {
+    "id": "ObjectFlatter.general.structureMappings",
+    "text": "structureMappings",
+    "i18ns": {
+      "en_US": "structureMappings",
+      "zh_CN": "结构映射"
+    }
+  },
+  {
+    "id": "ObjectFlatter.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  }
+]

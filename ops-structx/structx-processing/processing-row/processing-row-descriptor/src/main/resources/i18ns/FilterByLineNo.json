@@ -1,0 +1,42 @@
+[
+  {
+    "id": "FilterByLineNo.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "FilterByLineNo.general.lastNo",
+    "text": "lastNo",
+    "i18ns": {
+      "en_US": "lastNo",
+      "zh_CN": "结束行"
+    }
+  },
+  {
+    "id": "FilterByLineNo.general.invert",
+    "text": "invert",
+    "i18ns": {
+      "en_US": "invert",
+      "zh_CN": "反转过滤"
+    }
+  },
+  {
+    "id": "FilterByLineNo.general.firstNo",
+    "text": "firstNo",
+    "i18ns": {
+      "en_US": "firstNo",
+      "zh_CN": "开始行"
+    }
+  },
+  {
+    "id": "FilterByLineNo",
+    "text": "FilterByLineNo",
+    "i18ns": {
+      "en_US": "FilterByLineNo",
+      "zh_CN": "基于行号过滤"
+    }
+  }
+]

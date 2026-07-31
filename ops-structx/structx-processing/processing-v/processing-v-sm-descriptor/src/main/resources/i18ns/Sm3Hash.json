@@ -1,0 +1,50 @@
+[
+  {
+    "id": "Sm3Hash",
+    "text": "Sm3Hash",
+    "i18ns": {
+      "en_US": "Sm3Hash",
+      "zh_CN": "SM3哈希"
+    }
+  },
+  {
+    "id": "Sm3Hash.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "Sm3Hash.general.workingMode",
+    "text": "workingMode",
+    "i18ns": {
+      "en_US": "workingMode",
+      "zh_CN": "编码输出模式"
+    }
+  },
+  {
+    "id": "Sm3Hash.general.columnSet",
+    "text": "columnSet",
+    "i18ns": {
+      "en_US": "columnSet",
+      "zh_CN": "待哈希列集合"
+    }
+  },
+  {
+    "id": "Sm3Hash.general.columnSet.columnName",
+    "text": "columnName",
+    "i18ns": {
+      "en_US": "columnName",
+      "zh_CN": "待哈希列"
+    }
+  },
+  {
+    "id": "Sm3Hash.general.columnSet.salt",
+    "text": "salt",
+    "i18ns": {
+      "en_US": "salt",
+      "zh_CN": "盐"
+    }
+  }
+]

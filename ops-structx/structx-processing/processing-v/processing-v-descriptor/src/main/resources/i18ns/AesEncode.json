@@ -1,0 +1,34 @@
+[
+  {
+    "id": "AesEncode",
+    "text": "AesEncode",
+    "i18ns": {
+      "en_US": "AesEncode",
+      "zh_CN": "AES编码"
+    }
+  },
+  {
+    "id": "AesEncode.general.key",
+    "text": "key",
+    "i18ns": {
+      "en_US": "key",
+      "zh_CN": "加密key"
+    }
+  },
+  {
+    "id": "AesEncode.general.workingMode",
+    "text": "workingMode",
+    "i18ns": {
+      "en_US": "workingMode",
+      "zh_CN": "编码输出模式"
+    }
+  },
+  {
+    "id": "AesEncode.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  }
+]

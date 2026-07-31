@@ -1,0 +1,26 @@
+[
+  {
+    "id": "AttachmentsDisaggregate.general.idColumn",
+    "text": "idColumn",
+    "i18ns": {
+      "en_US": "idColumn",
+      "zh_CN": "附件标识列"
+    }
+  },
+  {
+    "id": "AttachmentsDisaggregate",
+    "text": "AttachmentsDisaggregate",
+    "i18ns": {
+      "en_US": "AttachmentsDisaggregate",
+      "zh_CN": "附件拆分"
+    }
+  },
+  {
+    "id": "AttachmentsDisaggregate.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  }
+]

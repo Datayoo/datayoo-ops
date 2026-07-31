@@ -1,0 +1,18 @@
+[
+  {
+    "id": "AddColumns",
+    "text": "AddColumns",
+    "i18ns": {
+      "en_US": "AddColumns",
+      "zh_CN": "列添加"
+    }
+  },
+  {
+    "id": "AddColumns.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  }
+]

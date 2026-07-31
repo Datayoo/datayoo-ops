@@ -1,0 +1,3 @@
+org\datayoo\sengee\op\processing\r\AddRowsDescriptor.class
+org\datayoo\sengee\op\processing\st\COO2TableDescriptor.class
+org\datayoo\sengee\op\processing\st\RowTranspositionDescriptor.class

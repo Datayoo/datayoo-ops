@@ -1,0 +1,34 @@
+[
+  {
+    "id": "MurmurHash.general.workingMode",
+    "text": "workingMode",
+    "i18ns": {
+      "en_US": "workingMode",
+      "zh_CN": "编码输出模式"
+    }
+  },
+  {
+    "id": "MurmurHash.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "MurmurHash",
+    "text": "MurmurHash",
+    "i18ns": {
+      "en_US": "MurmurHash",
+      "zh_CN": "Murmur哈希"
+    }
+  },
+  {
+    "id": "MurmurHash.general.algorithm",
+    "text": "algorithm",
+    "i18ns": {
+      "en_US": "algorithm",
+      "zh_CN": "算法"
+    }
+  }
+]

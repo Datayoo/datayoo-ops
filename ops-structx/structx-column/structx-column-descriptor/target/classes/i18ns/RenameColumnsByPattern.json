@@ -1,0 +1,34 @@
+[
+  {
+    "id": "RenameColumnsByPattern.general.replacement",
+    "text": "replacement",
+    "i18ns": {
+      "en_US": "replacement",
+      "zh_CN": "列名替换值"
+    }
+  },
+  {
+    "id": "RenameColumnsByPattern.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "RenameColumnsByPattern",
+    "text": "RenameColumnsByPattern",
+    "i18ns": {
+      "en_US": "RenameColumnsByPattern",
+      "zh_CN": "基于模式重命名列"
+    }
+  },
+  {
+    "id": "RenameColumnsByPattern.general.regex",
+    "text": "regex",
+    "i18ns": {
+      "en_US": "regex",
+      "zh_CN": "列名待匹配的正则表达式"
+    }
+  }
+]

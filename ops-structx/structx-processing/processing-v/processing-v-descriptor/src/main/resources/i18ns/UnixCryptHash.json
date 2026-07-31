@@ -1,0 +1,34 @@
+[
+  {
+    "id": "UnixCryptHash.general.workingMode",
+    "text": "workingMode",
+    "i18ns": {
+      "en_US": "workingMode",
+      "zh_CN": "编码输出模式"
+    }
+  },
+  {
+    "id": "UnixCryptHash.general.key",
+    "text": "key",
+    "i18ns": {
+      "en_US": "key",
+      "zh_CN": "加密key"
+    }
+  },
+  {
+    "id": "UnixCryptHash",
+    "text": "UnixCryptHash",
+    "i18ns": {
+      "en_US": "UnixCryptHash",
+      "zh_CN": "UNIX加密哈希"
+    }
+  },
+  {
+    "id": "UnixCryptHash.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  }
+]

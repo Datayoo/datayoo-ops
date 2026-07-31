@@ -1,0 +1,82 @@
+[
+  {
+    "id": "PrivacyAggregate.general.confuseParams.noise",
+    "text": "noise",
+    "i18ns": {
+      "en_US": "noise",
+      "zh_CN": "混淆算法"
+    }
+  },
+  {
+    "id": "PrivacyAggregate.general.confuseParams.maxPartitionsContributed",
+    "text": "maxPartitionsContributed",
+    "i18ns": {
+      "en_US": "maxPartitionsContributed",
+      "zh_CN": "最大分区贡献"
+    }
+  },
+  {
+    "id": "PrivacyAggregate.general.confuseParams",
+    "text": "confuseParams",
+    "i18ns": {
+      "en_US": "confuseParams",
+      "zh_CN": "混淆参数设置"
+    }
+  },
+  {
+    "id": "PrivacyAggregate.general.confuseParams.upper",
+    "text": "upper",
+    "i18ns": {
+      "en_US": "upper",
+      "zh_CN": "值阈上界"
+    }
+  },
+  {
+    "id": "PrivacyAggregate",
+    "text": "PrivacyAggregate",
+    "i18ns": {
+      "en_US": "PrivacyAggregate",
+      "zh_CN": "差分隐私聚合"
+    }
+  },
+  {
+    "id": "PrivacyAggregate.general.confuseParams.delta",
+    "text": "delta",
+    "i18ns": {
+      "en_US": "delta",
+      "zh_CN": "delta变量"
+    }
+  },
+  {
+    "id": "PrivacyAggregate.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "PrivacyAggregate.general.confuseParams.maxContributionsPerPartition",
+    "text": "maxContributionsPerPartition",
+    "i18ns": {
+      "en_US": "maxContributionsPerPartition",
+      "zh_CN": "每分区最大贡献"
+    }
+  },
+  {
+    "id": "PrivacyAggregate.general.confuseParams.lower",
+    "text": "lower",
+    "i18ns": {
+      "en_US": "lower",
+      "zh_CN": "值阈下界"
+    }
+  },
+  {
+    "id": "PrivacyAggregate.general.confuseParams.epsilon",
+    "text": "epsilon",
+    "i18ns": {
+      "en_US": "epsilon",
+      "zh_CN": "epsilon变量"
+    }
+  }
+]

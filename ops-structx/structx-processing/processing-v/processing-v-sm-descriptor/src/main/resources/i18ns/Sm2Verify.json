@@ -1,0 +1,50 @@
+[
+  {
+    "id": "Sm2Verify",
+    "text": "Sm2Verify",
+    "i18ns": {
+      "en_US": "Sm2Verify",
+      "zh_CN": "SM2验签"
+    }
+  },
+  {
+    "id": "Sm2Verify.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "Sm2Verify.general.workingMode",
+    "text": "workingMode",
+    "i18ns": {
+      "en_US": "workingMode",
+      "zh_CN": "编码输出模式"
+    }
+  },
+  {
+    "id": "Sm2Verify.general.dataColumn",
+    "text": "dataColumn",
+    "i18ns": {
+      "en_US": "dataColumn",
+      "zh_CN": "原始数据列"
+    }
+  },
+  {
+    "id": "Sm2Verify.general.signColumn",
+    "text": "signColumn",
+    "i18ns": {
+      "en_US": "signColumn",
+      "zh_CN": "签名列"
+    }
+  },
+  {
+    "id": "Sm2Verify.general.publicKey",
+    "text": "publicKey",
+    "i18ns": {
+      "en_US": "publicKey",
+      "zh_CN": "公钥"
+    }
+  }
+]

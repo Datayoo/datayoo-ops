@@ -1,0 +1,57 @@
+[
+  {
+    "id": "ColumnsMapper.columnSet",
+    "text": "columnSet",
+    "i18ns": {
+      "en_US": "columnSet",
+      "zh_CN": "列集"
+    }
+  },
+  {
+    "id": "ColumnsMapper.columnSet.colMappings",
+    "text": "colMappings",
+    "i18ns": {
+      "en_US": "colMappings",
+      "zh_CN": "列集合"
+    }
+  },
+  {
+    "id": "ColumnsMapper.columnSet.colMappings.mappingEntry.colName",
+    "text": "colName",
+    "i18ns": {
+      "en_US": "colName",
+      "zh_CN": "输出列名称"
+    }
+  },
+  {
+    "id": "ColumnsMapper.columnSet.colMappings.mappingEntry.colType",
+    "text": "colType",
+    "i18ns": {
+      "en_US": "colType",
+      "zh_CN": "输出列类型"
+    }
+  },
+  {
+    "id": "ColumnsMapper",
+    "text": "ColumnsMapper",
+    "i18ns": {
+      "en_US": "ColumnsMapper",
+      "zh_CN": "列映射"
+    }
+  },
+  {
+    "id": "ColumnsMapper.columnSet.colMappings.mappingEntry",
+    "text": "mappingEntry",
+    "i18ns": {
+      "en_US": "mappingEntry"
+    }
+  },
+  {
+    "id": "ColumnsMapper.columnSet.colMappings.mappingEntry.colExpr",
+    "text": "colExpr",
+    "i18ns": {
+      "en_US": "colExpr",
+      "zh_CN": "输出数据表达式"
+    }
+  }
+]

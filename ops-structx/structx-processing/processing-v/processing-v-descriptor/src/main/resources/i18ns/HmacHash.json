@@ -1,0 +1,34 @@
+[
+  {
+    "id": "HmacHash.general.algorithm",
+    "text": "algorithm",
+    "i18ns": {
+      "en_US": "algorithm",
+      "zh_CN": "hmac算法"
+    }
+  },
+  {
+    "id": "HmacHash.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "HmacHash.general.workingMode",
+    "text": "workingMode",
+    "i18ns": {
+      "en_US": "workingMode",
+      "zh_CN": "编码输出模式"
+    }
+  },
+  {
+    "id": "HmacHash",
+    "text": "HmacHash",
+    "i18ns": {
+      "en_US": "HmacHash",
+      "zh_CN": "Hmac哈希"
+    }
+  }
+]

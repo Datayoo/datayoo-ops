@@ -1,0 +1,34 @@
+[
+  {
+    "id": "DesEncode.general.key",
+    "text": "key",
+    "i18ns": {
+      "en_US": "key",
+      "zh_CN": "加密key"
+    }
+  },
+  {
+    "id": "DesEncode",
+    "text": "DesEncode",
+    "i18ns": {
+      "en_US": "DesEncode",
+      "zh_CN": "Des解码"
+    }
+  },
+  {
+    "id": "DesEncode.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "DesEncode.general.workingMode",
+    "text": "workingMode",
+    "i18ns": {
+      "en_US": "workingMode",
+      "zh_CN": "编码输出模式"
+    }
+  }
+]

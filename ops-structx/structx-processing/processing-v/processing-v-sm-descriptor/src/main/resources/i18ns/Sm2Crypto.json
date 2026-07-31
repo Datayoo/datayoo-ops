@@ -1,0 +1,66 @@
+[
+  {
+    "id": "Sm2Crypto",
+    "text": "Sm2Crypto",
+    "i18ns": {
+      "en_US": "Sm2Crypto",
+      "zh_CN": "SM2加解密"
+    }
+  },
+  {
+    "id": "Sm2Crypto.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "Sm2Crypto.general.mode",
+    "text": "mode",
+    "i18ns": {
+      "en_US": "mode",
+      "zh_CN": "加解密模式"
+    }
+  },
+  {
+    "id": "Sm2Crypto.general.workingMode",
+    "text": "workingMode",
+    "i18ns": {
+      "en_US": "workingMode",
+      "zh_CN": "编码输出模式"
+    }
+  },
+  {
+    "id": "Sm2Crypto.general.columnSet",
+    "text": "columnSet",
+    "i18ns": {
+      "en_US": "columnSet",
+      "zh_CN": "待处理列集合"
+    }
+  },
+  {
+    "id": "Sm2Crypto.general.columnSet.columnName",
+    "text": "columnName",
+    "i18ns": {
+      "en_US": "columnName",
+      "zh_CN": "待处理列"
+    }
+  },
+  {
+    "id": "Sm2Crypto.general.publicKey",
+    "text": "publicKey",
+    "i18ns": {
+      "en_US": "publicKey",
+      "zh_CN": "公钥"
+    }
+  },
+  {
+    "id": "Sm2Crypto.general.privateKey",
+    "text": "privateKey",
+    "i18ns": {
+      "en_US": "privateKey",
+      "zh_CN": "私钥"
+    }
+  }
+]

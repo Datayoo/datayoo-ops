@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ValuesReplace.general.columnName",
+    "text": "columnName",
+    "i18ns": {
+      "en_US": "columnName",
+      "zh_CN": "待替换列名称"
+    }
+  },
+  {
+    "id": "ValuesReplace.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "ValuesReplace",
+    "text": "ValuesReplace",
+    "i18ns": {
+      "en_US": "ValuesReplace",
+      "zh_CN": "文本替换"
+    }
+  }
+]

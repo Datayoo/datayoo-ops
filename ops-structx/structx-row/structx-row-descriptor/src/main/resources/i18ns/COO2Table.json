@@ -1,0 +1,90 @@
+[
+  {
+    "id": "COO2Table.general.rowValueIndex",
+    "text": "rowValueIndex",
+    "i18ns": {
+      "en_US": "rowValueIndex",
+      "zh_CN": "值起始行"
+    }
+  },
+  {
+    "id": "COO2Table.general.columnSet.index",
+    "text": "index",
+    "i18ns": {
+      "en_US": "index",
+      "zh_CN": "对应数据列序号"
+    }
+  },
+  {
+    "id": "COO2Table.general.colHeaderIndex",
+    "text": "colHeaderIndex",
+    "i18ns": {
+      "en_US": "colHeaderIndex",
+      "zh_CN": "列头所在列"
+    }
+  },
+  {
+    "id": "COO2Table",
+    "text": "COO2Table",
+    "i18ns": {
+      "en_US": "COO2Table",
+      "zh_CN": "Flat数据转表格"
+    }
+  },
+  {
+    "id": "COO2Table.general.colValueIndex",
+    "text": "colValueIndex",
+    "i18ns": {
+      "en_US": "colValueIndex",
+      "zh_CN": "值起始列"
+    }
+  },
+  {
+    "id": "COO2Table.general.type",
+    "text": "type",
+    "i18ns": {
+      "en_US": "type",
+      "zh_CN": "模式"
+    }
+  },
+  {
+    "id": "COO2Table.general.columnSet.colType",
+    "text": "colType",
+    "i18ns": {
+      "en_US": "colType",
+      "zh_CN": "输出列类型"
+    }
+  },
+  {
+    "id": "COO2Table.general.headerType",
+    "text": "headerType",
+    "i18ns": {
+      "en_US": "headerType",
+      "zh_CN": "列头模式"
+    }
+  },
+  {
+    "id": "COO2Table.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "COO2Table.general.rowHeaderIndex",
+    "text": "rowHeaderIndex",
+    "i18ns": {
+      "en_US": "rowHeaderIndex",
+      "zh_CN": "列头所在行"
+    }
+  },
+  {
+    "id": "COO2Table.general.columnSet.colName",
+    "text": "colName",
+    "i18ns": {
+      "en_US": "colName",
+      "zh_CN": "头部名称"
+    }
+  }
+]

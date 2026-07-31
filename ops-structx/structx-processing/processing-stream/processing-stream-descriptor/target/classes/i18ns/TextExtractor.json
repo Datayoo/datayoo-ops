@@ -1,0 +1,58 @@
+[
+  {
+    "id": "TextExtractor.general.ignoreEmbededFileName",
+    "text": "ignoreEmbededFileName",
+    "i18ns": {
+      "en_US": "ignoreEmbededFileName",
+      "zh_CN": "是否忽略嵌入文件的名字"
+    }
+  },
+  {
+    "id": "TextExtractor.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "TextExtractor.general.ignoreSuperscript",
+    "text": "ignoreSuperscript",
+    "i18ns": {
+      "en_US": "ignoreSuperscript",
+      "zh_CN": "是否忽略上下标"
+    }
+  },
+  {
+    "id": "TextExtractor.general.ignorePageNo",
+    "text": "ignorePageNo",
+    "i18ns": {
+      "en_US": "ignorePageNo",
+      "zh_CN": "是否忽略页码"
+    }
+  },
+  {
+    "id": "TextExtractor.general.textLimit",
+    "text": "textLimit",
+    "i18ns": {
+      "en_US": "textLimit",
+      "zh_CN": "抽取出的文本大小限制"
+    }
+  },
+  {
+    "id": "TextExtractor",
+    "text": "TextExtractor",
+    "i18ns": {
+      "en_US": "TextExtractor",
+      "zh_CN": "文本抽取"
+    }
+  },
+  {
+    "id": "TextExtractor.general.ignoreLink",
+    "text": "ignoreLink",
+    "i18ns": {
+      "en_US": "ignoreLink",
+      "zh_CN": "是否忽略Link"
+    }
+  }
+]

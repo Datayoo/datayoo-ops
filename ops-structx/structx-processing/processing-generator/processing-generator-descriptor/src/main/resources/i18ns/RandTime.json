@@ -1,0 +1,66 @@
+[
+  {
+    "id": "RandTime.general.beginTime",
+    "text": "beginTime",
+    "i18ns": {
+      "en_US": "beginTime",
+      "zh_CN": "起始时间"
+    }
+  },
+  {
+    "id": "RandTime.general.pattern",
+    "text": "pattern",
+    "i18ns": {
+      "en_US": "pattern",
+      "zh_CN": "日期格式"
+    }
+  },
+  {
+    "id": "RandTime",
+    "text": "RandTime",
+    "i18ns": {
+      "en_US": "RandTime",
+      "zh_CN": "随机生成时间"
+    }
+  },
+  {
+    "id": "RandTime.general.beginDate",
+    "text": "beginDate",
+    "i18ns": {
+      "en_US": "beginDate",
+      "zh_CN": "起始日期"
+    }
+  },
+  {
+    "id": "RandTime.general.endDate",
+    "text": "endDate",
+    "i18ns": {
+      "en_US": "endDate",
+      "zh_CN": "结束日期"
+    }
+  },
+  {
+    "id": "RandTime.general.columnName",
+    "text": "columnName",
+    "i18ns": {
+      "en_US": "columnName",
+      "zh_CN": "数据列"
+    }
+  },
+  {
+    "id": "RandTime.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "RandTime.general.endTime",
+    "text": "endTime",
+    "i18ns": {
+      "en_US": "endTime",
+      "zh_CN": "结束时间"
+    }
+  }
+]

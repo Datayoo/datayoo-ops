@@ -1,0 +1,26 @@
+[
+  {
+    "id": "UrlDecode.general",
+    "text": "general",
+    "i18ns": {
+      "en_US": "general",
+      "zh_CN": "一般"
+    }
+  },
+  {
+    "id": "UrlDecode.general.workingMode",
+    "text": "workingMode",
+    "i18ns": {
+      "en_US": "workingMode",
+      "zh_CN": "解码输出模式"
+    }
+  },
+  {
+    "id": "UrlDecode",
+    "text": "UrlDecode",
+    "i18ns": {
+      "en_US": "UrlDecode",
+      "zh_CN": "URL解码"
+    }
+  }
+]
