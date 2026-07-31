@@ -38,15 +38,10 @@ install-lib.bat --force
 
 ### 算子打包
 
-```bash
-# 1. 先安装 lib 依赖到本地 Maven 仓库
-./install-lib.sh
-
-# 2. 编译并打包
-mvn clean package
-```
-
-`mvn clean package` 之后，在 IDEA 右侧 Maven 面板中依次双击执行 `descriptor-plugin` 下的 `descriptorPack` 和 `impl-plugin` 下的 `oyezPack`，分别生成 descriptor 和 oyez 的算子 zip 包。
+1. 执行 `./install-lib.sh` 安装依赖
+2. 在 IDEA 右侧 Maven 面板中，依次对每个目标模块执行 `Lifecycle` → `clean`、`package`
+3. 对 descriptor 模块：双击 `Plugins` → `descriptor-plugin` → `descriptorPack`，生成 descriptor zip
+4. 对 oyez 模块：双击 `Plugins` → `impl-plugin` → `oyezPack`，生成 oyez zip
 
 ## 环境说明
 
