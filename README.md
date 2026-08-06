@@ -71,6 +71,7 @@ mvn clean package          # 编译打包所有模块
 
 oyez 模块依赖对应的 descriptor 模块 jar，打包前需先将 descriptor 安装到本地仓库：
 
+注意：如果oyezPack报错缺失对应descriptor的包，就把父级module install到本地。
 ```bash
 mvn install -pl descriptor模块路径
 ```
