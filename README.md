@@ -1,90 +1,73 @@
 # datayoo-ops
 
-HuggingFists 平台算子开源工程。将 HuggingFists 低代码数据平台的算子组件以 **Descriptor + Oyez** 的 SPI 架构逐步开放，每个算子由描述符（Descriptor）定义元数据与参数，由执行器（Oyez）提供运行时实现。
+HuggingFists 平台算子开源工程。将 HuggingFists 低代码数据平台的算子组件以 **Descriptor + Oyez** 的 SPI 架构逐步开放：每个算子由描述符（Descriptor）定义元数据与参数，由执行器（Oyez）提供运行时实现。
+
+> **算子开发**：若要新建 / 定制算子，请前往脚手架与开发套件仓库 → [Datayoo/datayoo-ops-kit](https://github.com/Datayoo/datayoo-ops-kit)
 
 ## 目录
 
 - [快速开始](#快速开始)
 - [环境说明](#环境说明)
 - [模块说明](#模块说明)
+- [算子打包](#算子打包)
+- [算子导入](#算子导入)
+- [测试](#测试)
+
+---
 
 ## 快速开始
 
-`lib/` 目录存放平台私有依赖（Footstone、Sengee、Oyez、算子打包插件等），中央仓库没有。**本地编译前先执行安装脚本**，否则工程无法解析这些坐标。
+`lib/` 目录存放平台私有依赖（Footstone、Sengee、Oyez、算子打包插件等），中央仓库没有。**本地编译前请先将它们安装到你实际使用的 Maven 本地仓库**，否则工程无法解析这些坐标。
 
-| 脚本 | 平台 |
-|------|------|
-| `install-lib.bat` | Windows CMD（推荐入口，内部调用 `install-lib.ps1`） |
-| `install-lib.ps1` | Windows PowerShell |
-| `install-lib.sh` | Linux / macOS / Git Bash |
+仓库路径需显式指定（命令行参数或 `MAVEN_REPO` 环境变量）；不传参数时脚本会交互提示输入。
 
-脚本会：
-
-1. 把 `lib/*.jar` 按内嵌 GAV 装进本地 Maven 仓库，并带上完整 POM，让公共依赖（jackson、httpclient、commons-\* 等）仍由 Maven 从远程拉。
-2. 识别 `META-INF/maven/plugin.xml`，把 `descriptor-plugin` / `i18n-maven-plugin` / `impl-maven-plugin` 按 `maven-plugin` 安装，并写入组级前缀元数据（`descriptor` / `i18n` / `impl`）。
-3. 递归补齐 parent：私有 parent 没有就生成占位 POM；公共 parent（如 `maven-shared-components`）留给 Maven 自己下载，不 stub。
-4. 重装那些"曾经从内网 Nexus 下载"的缓存包。这类包在 `_remote.repositories` 里被标成来自某个远程仓库，本工程没有配置该仓库，Maven 会拒绝使用，报 `Could not find artifact`——尽管文件就在仓库里。
-5. 扫一遍私有依赖，列出 `lib/` 里还缺的包，方便补齐。
-
-没有内嵌 Maven 元数据的 jar（例如重新打包过的 `sigar`），需要在旁边放一个同名 `.pom` 声明坐标，如 `lib/sigar-1.6.5.132-7.pom`。
-
-### 使用方式
-
-仓库路径由用户指定。无参数时脚本会提示输入；也可以通过命令行参数或 `MAVEN_REPO` 环境变量传入。脚本不会自动选择或写死仓库目录。
-
-注意 IDEA 可以在 `Settings → Build Tools → Maven → Local repository` 单独指定仓库。应把该路径传给安装脚本；如果还要用命令行 Maven 构建，再按需安装到命令行 Maven 使用的仓库。
+> **提示**：IDEA 可在 `Settings → Build Tools → Maven → Local repository` 单独指定仓库。请将该路径传给安装脚本；若还需用命令行 Maven 构建，再按需安装到命令行 Maven 使用的仓库。
 
 ```bash
 # Windows CMD（推荐）
-install-lib.bat
 install-lib.bat C:\path\to\repository
 install-lib.bat C:\path\to\repository --force
 
 # Windows PowerShell
-.\install-lib.ps1
 .\install-lib.ps1 -Repo C:\path\to\repository
 .\install-lib.ps1 -Repo C:\path\to\repository -Force
 
 # Linux / macOS / Git Bash
-./install-lib.sh
 ./install-lib.sh /path/to/maven/repo
 ./install-lib.sh /path/to/maven/repo --force
 export MAVEN_REPO=/path/to/maven/repo && ./install-lib.sh
 ```
 
-Git Bash 下 Windows 盘符路径使用正斜杠，例如 `D:/path/to/repository`；CMD / PowerShell 使用 `D:\path\to\repository`。
+路径写法注意：
 
-### 算子打包
+- Git Bash 下 Windows 盘符使用正斜杠，例如 `D:/path/to/repository`
+- CMD / PowerShell 使用反斜杠，例如 `D:\path\to\repository`
 
-descriptor 和 oyez 的打包插件（`descriptor-plugin` / `impl-plugin`）均依赖同模块的 `target/*.jar`，需先编译：
-
-```bash
-mvn clean package          # 编译打包所有模块
-```
-
-#### 打包 descriptor
-
-在 IDEA 右侧 Maven 面板中，对目标 descriptor 模块双击 `Plugins` → `descriptor-plugin` → `descriptorPack`，生成 descriptor zip。
-![img.png](img.png)![img_1.png](img_1.png)
-#### 打包 oyez
-
-oyez 模块可能会依赖对应的 descriptor 里的常量或者方法，如果依赖就把父级module install到本地：
-
-![img_2.png](img_2.png)  ![img_3.png](img_3.png)
-
+---
 
 ## 环境说明
 
-**JDK 1.8**（Java 8），Maven 编译配置为 `source/target = 1.8`。
+编译与打包均需使用 **JDK 1.8**，不要用更高版本的 JDK 跑 Maven。
+
+| 项 | 要求 |
+|----|------|
+| JDK | **1.8**（Java 8） |
+| Maven | 使用上述 JDK 1.8；`source` / `target` = `1.8` |
+
+可用 `java -version`、`mvn -v` 确认 Maven 实际绑定的是 1.8。
+
+---
 
 ## 模块说明
+
+后续会陆续开放更多算子源码。
 
 ```
 ops-structx/
 ├── structx-column/               # 列级算子
 │   ├── structx-column-descriptor
 │   └── structx-column-oyez
-├── structx-row/                  # 行级/结构转换算子
+├── structx-row/                  # 行级 / 结构转换算子
 │   ├── structx-row-descriptor
 │   └── structx-row-oyez
 └── structx-processing/           # 数据处理算子
@@ -100,15 +83,65 @@ ops-structx/
 
 | 层次 | 说明 |
 |------|------|
-| **Descriptor** | 算子元数据定义层。声明算子名称、版本、输入/输出端口、参数 schema 等，运行在 `sengee` 框架上。`src/main/resources` 下包含三类资源：`helps/`（算子帮助文档 .md）、`i18ns/`（国际化文案 .json）、`portraits/`（算子图标 .svg） |
+| **Descriptor** | 算子元数据定义层。声明算子名称、版本、输入/输出端口、参数 schema 等，运行在 `sengee` 框架上。`src/main/resources` 下包含三类资源：`helps/`（算子帮助文档 `.md`）、`i18ns/`（国际化文案 `.json`）、`portraits/`（算子图标 `.svg`） |
 | **Oyez** | 算子运行时实现层。实现算子的实际数据处理逻辑，运行在 `oyez` 运行时引擎上。`src/main/resources` 下可按需放置运行时配置文件（如 Tika 配置等） |
 
 ---
 
-## 许可证
+## 算子打包
 
-待定
+descriptor 与 oyez 的打包插件（`descriptor-plugin` / `impl-plugin`）均依赖同模块的 `target/*.jar`，**需先编译**。
+
+### 打包 Descriptor
+
+在 IDEA 右侧 Maven 面板中：
+
+1. 对目标 descriptor 模块先执行 `package`
+2. 双击 `Plugins` → `descriptor-plugin` → `descriptorPack`，生成 descriptor zip
+
+| 步骤示意 | |
+|:---:|:---:|
+| <img src="img.png" alt="Maven 面板中执行 descriptorPack" width="280" /> | <img src="img_1.png" alt="生成 descriptor zip" width="280" /> |
+
+### 打包 Oyez
+
+oyez 模块可能依赖对应 descriptor 中的常量或方法。若存在依赖，请先将父级 module `install` 到本地，再打包：
+
+1. 对目标 oyez 模块先执行 `package`
+2. 双击 `Plugins` → `impl-plugin` → `oyezPack`，生成对应 zip
+
+| 步骤示意 | |
+|:---:|:---:|
+| <img src="img_2.png" alt="Maven 面板中执行 oyezPack" width="280" /> | <img src="img_3.png" alt="生成 oyez zip" width="280" /> |
 
 ---
 
-> 本项目逐步开源中，更多算子模块将持续加入。
+## 算子导入
+
+在 HuggingFists 平台中：
+
+1. 打开 **资源库 → 算子库 → 导入**
+2. 选择打包生成的 zip 文件即可完成导入
+
+<img src="img_4.png" alt="算子库导入界面" width="560" />
+
+---
+
+## 测试
+
+1. 在 HuggingFists 平台 **流程 → 新增**，创建新流程
+2. 用刚导入的算子搭建流程
+3. 在 IDEA 中创建远程调试
+
+默认远程调试端口：
+
+| 目标 | 端口 |
+|------|------|
+| 定义态 | `38502` |
+| oyez 计算节点 | `38505` |
+
+<img src="img_5.png" alt="远程调试配置示意" width="480" />
+
+---
+
+> 本项目逐步开源中，更多算子模块将持续加入。新建算子请使用 [datayoo-ops-kit](https://github.com/Datayoo/datayoo-ops-kit)。
