@@ -66,17 +66,13 @@ mvn clean package          # 编译打包所有模块
 #### 打包 descriptor
 
 在 IDEA 右侧 Maven 面板中，对目标 descriptor 模块双击 `Plugins` → `descriptor-plugin` → `descriptorPack`，生成 descriptor zip。
-
+![img.png](img.png)![img_1.png](img_1.png)
 #### 打包 oyez
 
-oyez 模块依赖对应的 descriptor 模块 jar，打包前需先将 descriptor 安装到本地仓库：
+oyez 模块可能会依赖对应的 descriptor 里的常量或者方法，如果依赖就把父级module install到本地：
 
-注意：如果oyezPack报错缺失对应descriptor的包，就把父级module install到本地。
-```bash
-mvn install -pl descriptor模块路径
-```
+![img_2.png](img_2.png)  ![img_3.png](img_3.png)
 
-然后在 IDEA 右侧 Maven 面板中，对目标 oyez 模块双击 `Plugins` → `impl-plugin` → `oyezPack`，生成 oyez zip。
 
 ## 环境说明
 
