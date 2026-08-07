@@ -13,10 +13,9 @@
 # from a public group is left untouched so Maven downloads the real one (stubbing those would
 # strip their dependencyManagement and break ${property} resolution in the children).
 #
-# Usage:
-#   ./install-lib.sh
-#   ./install-lib.sh /path/to/maven/repo
-#   ./install-lib.sh /path/to/maven/repo --force
+# Usage (run from repo root or this directory):
+#   ./install/install-lib.sh /path/to/maven/repo
+#   ./install/install-lib.sh /path/to/maven/repo --force
 
 set -uo pipefail
 cd "$(dirname "$0")"

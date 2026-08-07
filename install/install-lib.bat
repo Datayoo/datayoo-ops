@@ -1,8 +1,7 @@
 @echo off
 rem Thin CMD wrapper around install-lib.ps1.
-rem   install-lib.bat
-rem   install-lib.bat C:\path\to\repository
-rem   install-lib.bat C:\path\to\repository --force
+rem   install\install-lib.bat C:\path\to\repository
+rem   install\install-lib.bat C:\path\to\repository --force
 setlocal
 cd /d "%~dp0"
 

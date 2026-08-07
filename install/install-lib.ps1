@@ -12,10 +12,9 @@
 # from a public group is left untouched so Maven downloads the real one (stubbing those would
 # strip their dependencyManagement and break ${property} resolution in the children).
 #
-# Usage:
-#   .\install-lib.ps1
-#   .\install-lib.ps1 -Repo C:\path\to\repository
-#   .\install-lib.ps1 -Repo C:\path\to\repository -Force
+# Usage (run from repo root or this directory):
+#   .\install\install-lib.ps1 -Repo C:\path\to\repository
+#   .\install\install-lib.ps1 -Repo C:\path\to\repository -Force
 
 param(
   [string]$Repo,

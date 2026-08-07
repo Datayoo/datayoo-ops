@@ -19,7 +19,7 @@ HuggingFists 平台算子开源工程。将 HuggingFists 低代码数据平台�
 
 ## 快速开始
 
-`lib/` 目录存放平台私有依赖（Footstone、Sengee、Oyez、算子打包插件等），中央仓库没有。**本地编译前请先将它们安装到你实际使用的 Maven 本地仓库**，否则工程无法解析这些坐标。
+`install/lib/` 目录存放平台私有依赖（Footstone、Sengee、Oyez、算子打包插件等），中央仓库没有。**本地编译前请先将它们安装到你实际使用的 Maven 本地仓库**，否则工程无法解析这些坐标。安装脚本与依赖同在 `install/` 下。
 
 仓库路径需显式指定（命令行参数或 `MAVEN_REPO` 环境变量）；不传参数时脚本会交互提示输入。
 
@@ -27,17 +27,17 @@ HuggingFists 平台算子开源工程。将 HuggingFists 低代码数据平台�
 
 ```bash
 # Windows CMD（推荐）
-install-lib.bat C:\path\to\repository
-install-lib.bat C:\path\to\repository --force
+install\install-lib.bat C:\path\to\repository
+install\install-lib.bat C:\path\to\repository --force
 
 # Windows PowerShell
-.\install-lib.ps1 -Repo C:\path\to\repository
-.\install-lib.ps1 -Repo C:\path\to\repository -Force
+.\install\install-lib.ps1 -Repo C:\path\to\repository
+.\install\install-lib.ps1 -Repo C:\path\to\repository -Force
 
 # Linux / macOS / Git Bash
-./install-lib.sh /path/to/maven/repo
-./install-lib.sh /path/to/maven/repo --force
-export MAVEN_REPO=/path/to/maven/repo && ./install-lib.sh
+./install/install-lib.sh /path/to/maven/repo
+./install/install-lib.sh /path/to/maven/repo --force
+export MAVEN_REPO=/path/to/maven/repo && ./install/install-lib.sh
 ```
 
 路径写法注意：
@@ -103,7 +103,7 @@ descriptor 与 oyez 的打包插件（`descriptor-plugin` / `impl-plugin`）均�
 
 | 步骤示意 | |
 |:---:|:---:|
-| <img src="img.png" alt="Maven 面板中执行 descriptorPack" width="280" /> | <img src="img_1.png" alt="生成 descriptor zip" width="280" /> |
+| <img src="docs/images/img.png" alt="Maven 面板中执行 descriptorPack" width="280" /> | <img src="docs/images/img_1.png" alt="生成 descriptor zip" width="280" /> |
 
 ### 打包 Oyez
 
@@ -114,7 +114,7 @@ oyez 模块可能依赖对应 descriptor 中的常量或方法。若存在依赖
 
 | 步骤示意 | |
 |:---:|:---:|
-| <img src="img_2.png" alt="Maven 面板中执行 oyezPack" width="280" /> | <img src="img_3.png" alt="生成 oyez zip" width="280" /> |
+| <img src="docs/images/img_2.png" alt="Maven 面板中执行 oyezPack" width="280" /> | <img src="docs/images/img_3.png" alt="生成 oyez zip" width="280" /> |
 
 ---
 
@@ -125,7 +125,7 @@ oyez 模块可能依赖对应 descriptor 中的常量或方法。若存在依赖
 1. 打开 **资源库 → 算子库 → 导入**
 2. 选择打包生成的 zip 文件即可完成导入
 
-<img src="img_4.png" alt="算子库导入界面" width="560" />
+<img src="docs/images/img_4.png" alt="算子库导入界面" width="560" />
 
 ---
 
@@ -142,7 +142,7 @@ oyez 模块可能依赖对应 descriptor 中的常量或方法。若存在依赖
 | 定义态 | `38502` |
 | oyez 计算节点 | `38505` |
 
-<img src="img_5.png" alt="远程调试配置示意" width="480" />
+<img src="docs/images/img_5.png" alt="远程调试配置示意" width="480" />
 
 ---
 

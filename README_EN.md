@@ -19,7 +19,7 @@ Open-source HuggingFists operators. Platform operators are being released gradua
 
 ## Quick start
 
-The `lib/` directory holds private platform dependencies (Footstone, Sengee, Oyez, operator packaging plugins, etc.) that are not on Maven Central. **Install them into the Maven local repository you actually use before building locally**, or the project cannot resolve those coordinates.
+Private platform dependencies (Footstone, Sengee, Oyez, operator packaging plugins, etc.) live under `install/lib/` and are not on Maven Central. **Install them into the Maven local repository you actually use before building locally**, or the project cannot resolve those coordinates. Install scripts sit alongside the jars in `install/`.
 
 You must specify the repository path explicitly (CLI argument or `MAVEN_REPO`). If omitted, the script prompts interactively.
 
@@ -27,17 +27,17 @@ You must specify the repository path explicitly (CLI argument or `MAVEN_REPO`). 
 
 ```bash
 # Windows CMD (recommended)
-install-lib.bat C:\path\to\repository
-install-lib.bat C:\path\to\repository --force
+install\install-lib.bat C:\path\to\repository
+install\install-lib.bat C:\path\to\repository --force
 
 # Windows PowerShell
-.\install-lib.ps1 -Repo C:\path\to\repository
-.\install-lib.ps1 -Repo C:\path\to\repository -Force
+.\install\install-lib.ps1 -Repo C:\path\to\repository
+.\install\install-lib.ps1 -Repo C:\path\to\repository -Force
 
 # Linux / macOS / Git Bash
-./install-lib.sh /path/to/maven/repo
-./install-lib.sh /path/to/maven/repo --force
-export MAVEN_REPO=/path/to/maven/repo && ./install-lib.sh
+./install/install-lib.sh /path/to/maven/repo
+./install/install-lib.sh /path/to/maven/repo --force
+export MAVEN_REPO=/path/to/maven/repo && ./install/install-lib.sh
 ```
 
 Path notes:
@@ -103,7 +103,7 @@ In the IntelliJ Maven tool window:
 
 | Steps | |
 |:---:|:---:|
-| <img src="img.png" alt="Run descriptorPack in Maven tool window" width="280" /> | <img src="img_1.png" alt="Generated descriptor zip" width="280" /> |
+| <img src="docs/images/img.png" alt="Run descriptorPack in Maven tool window" width="280" /> | <img src="docs/images/img_1.png" alt="Generated descriptor zip" width="280" /> |
 
 ### Package Oyez
 
@@ -114,7 +114,7 @@ An oyez module may depend on constants or methods from its descriptor. If so, `i
 
 | Steps | |
 |:---:|:---:|
-| <img src="img_2.png" alt="Run oyezPack in Maven tool window" width="280" /> | <img src="img_3.png" alt="Generated oyez zip" width="280" /> |
+| <img src="docs/images/img_2.png" alt="Run oyezPack in Maven tool window" width="280" /> | <img src="docs/images/img_3.png" alt="Generated oyez zip" width="280" /> |
 
 ---
 
@@ -125,7 +125,7 @@ In HuggingFists:
 1. Open **Resource Library → Operator Library → Import**
 2. Select the packaged zip files to import
 
-<img src="img_4.png" alt="Operator library import UI" width="560" />
+<img src="docs/images/img_4.png" alt="Operator library import UI" width="560" />
 
 ---
 
@@ -142,7 +142,7 @@ Default remote debug ports:
 | Definition runtime | `38502` |
 | oyez compute node | `38505` |
 
-<img src="img_5.png" alt="Remote debug configuration" width="480" />
+<img src="docs/images/img_5.png" alt="Remote debug configuration" width="480" />
 
 ---
 
