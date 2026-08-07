@@ -59,7 +59,6 @@ Git Bash 下 Windows 盘符路径使用正斜杠，例如 `D:/path/to/repository
 descriptor 和 oyez 的打包插件（`descriptor-plugin` / `impl-plugin`）均依赖同模块的 `target/*.jar`，需先编译：
 
 ```bash
-./install-lib.sh          # 安装 lib 依赖到本地 Maven 仓库
 mvn clean package          # 编译打包所有模块
 ```
 
