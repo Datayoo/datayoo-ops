@@ -1,5 +1,7 @@
 # datayoo-ops
 
+[中文](README.md) | [English](README_EN.md)
+
 HuggingFists 平台算子开源工程。将 HuggingFists 低代码数据平台的算子组件以 **Descriptor + Oyez** 的 SPI 架构逐步开放：每个算子由描述符（Descriptor）定义元数据与参数，由执行器（Oyez）提供运行时实现。
 
 > **算子开发**：若要新建 / 定制算子，请前往脚手架与开发套件仓库 → [Datayoo/datayoo-ops-kit](https://github.com/Datayoo/datayoo-ops-kit)
